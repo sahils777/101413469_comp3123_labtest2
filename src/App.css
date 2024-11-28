@@ -1,38 +1,62 @@
+/* General App Styles */
 .App {
   text-align: center;
 }
 
+/* Logo Styles */
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 40vmin; /* Responsive height based on viewport size */
+  pointer-events: none; /* Prevent interactions with the logo */
 }
 
+/* Animation for the Logo */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* Continuous spinning animation */
   }
 }
 
+/* Header Styles */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #282c34; /* Dark background for contrast */
+  min-height: 100vh; /* Full viewport height */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Column layout */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  font-size: calc(10px + 2vmin); /* Responsive font size */
+  color: white; /* White text color for readability */
 }
 
+/* Link Styles */
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* Light blue link color */
+  text-decoration: none; /* Remove underline from links */
 }
 
+.App-link:hover,
+.App-link:focus {
+  text-decoration: underline; /* Underline on hover/focus for accessibility */
+}
+
+/* Keyframes for Logo Spin Animation */
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Start rotation at 0 degrees */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* End rotation at 360 degrees */
   }
+}
+
+/* Accessibility Improvements */
+/* Ensure sufficient contrast and focus styles for better accessibility */
+/* Add focus styles for keyboard navigation */
+
+.App-header :focus {
+  outline: none; /* Remove default outline */
+}
+
+.App-header :focus-visible {
+  outline: 2px solid #61dafb; /* Custom focus outline for accessibility */
 }
