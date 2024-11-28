@@ -1,21 +1,18 @@
-/* Global and Body Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #4b7193; /* Fallback background color */
+    background-color: #4b7193;
     display: flex;
-    justify-content: center; /* Horizontal centering */
-    align-items:stretch; /* Vertical centering */
-    height: 950px; /* Full viewport height */
+    justify-content: center;
+    align-items: stretch;
+    height: 950px;
 }
 
-/* Weather App Container */
 .weather-app {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Search Section */
 .weather-search {
     display: flex;
     margin-bottom: 20px;
@@ -32,16 +29,15 @@ body {
 .weather-search button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #fb8804; /* Vibrant button background */
-    color: rgb(6, 6, 6); /* Dark button text */
+    background-color: #fb8804;
+    color: rgb(6, 6, 6);
     border: none;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
 }
 
-/* Weather Display Container */
 .weather-display {
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -50,7 +46,6 @@ body {
     background-position: center;
 }
 
-/* Current Conditions Section - Organized Vertically */
 .current-conditions {
     margin-bottom: 20px;
     padding: 15px;
@@ -60,11 +55,10 @@ body {
     flex-direction: column;
 }
 
-/* Weather Details Layout */
 .current-weather {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Spread out items */
+    justify-content: space-between;
 }
 
 .current-weather img {
@@ -73,7 +67,6 @@ body {
     margin-right: 15px;
 }
 
-/* Temperature and Description Styling */
 .temperature-container {
     display: flex;
     flex-direction: column;
@@ -85,7 +78,7 @@ body {
 }
 
 .temp {
-    font-size: 3rem; /* Large temperature display */
+    font-size: 3rem;
     line-height: 1;
     margin-bottom: 5px;
 }
@@ -108,7 +101,6 @@ body {
     color: #333;
 }
 
-/* Predicted Weather and Details Sections */
 .predicted-weather,
 .weather-details {
     margin-bottom: 20px;

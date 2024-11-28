@@ -15,7 +15,6 @@ function WeatherDisplay({ weatherData }) {
     <div className="weather-display">
       <h2>{name}, {sys.country}</h2>
 
-      {/* Current Conditions Section */}
       <div className="current-conditions">
         <h3>Current Conditions</h3>
         <div className="current-weather">
@@ -31,10 +30,8 @@ function WeatherDisplay({ weatherData }) {
         </div>
       </div>
 
-      {/* Predicted Weather Section */}
       <div className="predicted-weather">
     <h3>Predicted Weather</h3>
-    {/* Example static forecast data */}
     <div className="forecast">
         {[
             { day: 'Monday', temp: 22, description: 'Sunny' },
@@ -51,8 +48,6 @@ function WeatherDisplay({ weatherData }) {
         ))}
     </div>
 </div>
-
-      {/* Additional Weather Details Section */}
       <WeatherDetails main={main} wind={wind} />
     </div>
   );
